@@ -28,9 +28,9 @@ pkts=rdpcap("data2.pcap", count=1)
 #wireshark(pkts)
 #pkts.key = new_key
 #pkts.nonce = new_nonce
-#send(IP(dst=10.0.0.30")/UDP()/ISAKMP(pkts))    # UE : 10.0.0.30
+#send(IP(dst=10.0.0.30")/UDP()/ISAKMP(pkts))    # UE : 10.0.0.30 
 
-send(IP(dst="10.0.0.30", src="208.54.83.96")/UDP()/ISAKMP(data3))   
+send(IP(dst="10.0.0.30", src="208.54.83.96")/UDP()/ISAKMP(data3))   # temporarily sending command
 
 
 
